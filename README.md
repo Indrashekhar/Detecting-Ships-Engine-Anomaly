@@ -19,3 +19,6 @@ Your task is to develop a robust anomaly detection system to protect a companyâ€
 
 You must prepare a report illustrating your insights to the prospective stakeholders, showing how your solution will save the business money and build trust with its stakeholders. At this stage of the project, the main question you need to consider is:
 - What insights can be gained from the data, and what recommendations can be made to the company based on these insights? For example, which features need to be monitored closely, and what are the thresholds for anomalous observations? Which statistical or ML technique is the best for anomaly detection based on **this data set**, and which feature (univariate approach) or combination of features (multivariate approach) can predict maintenance?
+
+## Solution
+![image](https://github.com/user-attachments/assets/2389ecda-16c4-4e6e-b75f-37df925d945f)
