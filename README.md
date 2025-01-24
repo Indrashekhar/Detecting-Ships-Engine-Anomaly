@@ -22,3 +22,18 @@ You must prepare a report illustrating your insights to the prospective stakehol
 
 ## Solution
 ![image](https://github.com/user-attachments/assets/2389ecda-16c4-4e6e-b75f-37df925d945f)
+
+## Perform EDA
+![image](https://github.com/user-attachments/assets/f6a627af-4d9a-48eb-af35-011bc1d030e3)
+
+## Descriptive statistics
+![image](https://github.com/user-attachments/assets/f76b742a-1d2e-4060-a299-70a71100723f)
+
+## Visualise the data to determine the distribution and extreme values
+### Histogram
+![image](https://github.com/user-attachments/assets/6576ed67-a15d-422b-a8b5-9f305fbae51c)
+
+### Boxplot
+![image](https://github.com/user-attachments/assets/bcb9181f-eaa2-4073-8cc2-13da63679650)
+
+
