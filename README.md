@@ -36,4 +36,12 @@ You must prepare a report illustrating your insights to the prospective stakehol
 ### Boxplot
 ![image](https://github.com/user-attachments/assets/bcb9181f-eaa2-4073-8cc2-13da63679650)
 
+## Anomaly detection with a statistical method: Interquartile Range (IQR)
+![image](https://github.com/user-attachments/assets/cdb2c6fa-576b-498b-8e08-686cc7793be5)
+
+## Interquartile Range (IQR) observation: 
+
+The interquartile range (IQR) method has identified 11 samples as anomalies based on 3 features falling under an outlier category. There are no sample that has more than 3 outlying features. This is way below the expected number of anomalies that were expected as per the business insight of 1% to 5%.
+
+Based on 2 or more features, IQR indicates 422 samples as anomalies. This falls within the expected range and therefore a more appropriate model if IRQ was to be adopted.
 
