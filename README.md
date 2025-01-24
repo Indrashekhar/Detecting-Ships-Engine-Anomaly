@@ -61,4 +61,32 @@ When gamma was kept constant at .5 and nu was changed, the number of anomalies c
 
 One-Class SVM is able to predict anomalies between 1% and 5% by varying the nu parameters.
 
-Note: The normal data points and anomalies seem to overlap as the anomalies are predicted with all 6 features while it is plotted over 2 features deduced using PCA. Having said that the anomalies are mainly towards the edges.
+**Note**: The normal data points and anomalies seem to overlap as the anomalies are predicted with all 6 features while it is plotted over 2 features deduced using PCA. Having said that the anomalies are mainly towards the edges.
+
+## Anomaly detection using Isolation Forest
+![image](https://github.com/user-attachments/assets/1d44a564-6e42-429e-8ced-85ff157f2e23)
+
+## Isolation Forest oberservations:
+
+Initially the features were Normalised (MinMaxScaler) as the data distribution of all features seemed skewed. Anomalies were then identified using Isolation Forest using various parameter values for contamination.
+
+The n_estimators parameter was kept constant at 100 throughout the modelling.
+
+When contamination was set at .05 the number of anomalies predicted was 977 matching the 5% anomalies that business insight had provided.
+
+When contamination was set at .01 the number of anomalies predicted was 196 closer the 1% anomalies that business insight had provided.
+
+Isolation Forest is able to predict anomalies between 1% and 5% with corresponding values of contamination parameter.
+
+**Note**: The normal data points and anomalies seem to overlap as the anomalies are predicted with all 6 features while it is plotted over 2 features deduced using PCA.
+
+# Conclusion
+
+> **Descriptive statistics** did not show any oddity. Data was clean with no null values or duplicates. Mean and median seemed very close, but the visualisation (histogram) showed that the distribution was skewed. The box plot also showed that there were quite a lot of outliers on all features except **Coolant temp**. Based on the skewed distribution, data was scaled using MinMaxScaler to normalise them.
+
+> **Interquartile range (IQR)** method identified 11 samples as anomalies based on 3 or more features falling under an outlier category and 422 as anomalies based on 2 or more features falling under an outlier category.
+
+> Both **One-class SVM** and **Isolation Forest** models were able to predict anomalies in the range from 1% to 5%.
+
+> All 3 methods predicted anomalies within the expected range. To make a definitive choice between the 3 models, their results will have to be verified by a domain expert and determined which of the 3 models made the most accurate predictions.
+
