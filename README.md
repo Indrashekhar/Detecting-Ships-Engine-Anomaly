@@ -37,6 +37,9 @@ You must prepare a report illustrating your insights to the prospective stakehol
 ![image](https://github.com/user-attachments/assets/bcb9181f-eaa2-4073-8cc2-13da63679650)
 
 ## Anomaly detection with a statistical method: Interquartile Range (IQR)
+### 2 features falling under an outlier category
+![image](https://github.com/user-attachments/assets/08ca20bb-fdb8-4a42-8b92-7818dc46c33c)
+### 3 features falling under an outlier category
 ![image](https://github.com/user-attachments/assets/cdb2c6fa-576b-498b-8e08-686cc7793be5)
 
 ## Interquartile Range (IQR) observation: 
