@@ -42,9 +42,23 @@ You must prepare a report illustrating your insights to the prospective stakehol
 ### 3 features falling under an outlier category
 ![image](https://github.com/user-attachments/assets/cdb2c6fa-576b-498b-8e08-686cc7793be5)
 
-## Interquartile Range (IQR) observation: 
+## Interquartile Range (IQR) observations: 
 
 The interquartile range (IQR) method has identified 11 samples as anomalies based on 3 features falling under an outlier category. There are no sample that has more than 3 outlying features. This is way below the expected number of anomalies that were expected as per the business insight of 1% to 5%.
 
 Based on 2 or more features, IQR indicates 422 samples as anomalies. This falls within the expected range and therefore a more appropriate model if IRQ was to be adopted.
 
+## Anomaly detection using one-class SVM
+![image](https://github.com/user-attachments/assets/2dc0c38b-30a0-4714-b69f-a6f7aff3d04e)
+
+## One-Class SVM oberservations:
+
+Initially the features were Normalised (MinMaxScaler) as the data distribution of all features seemed skewed. Anomalies were then identified using one-class SVM using various parameter values for gamma and nu.
+
+When nu was kept constant at .05 and gamma was changed, the number of anomalies did not change by much and kept around 980. This is around the 5% anomalies that business insight had provided.
+
+When gamma was kept constant at .5 and nu was changed, the number of anomalies changed and predicted 199 anomalies at nu = 0.01. This is around the 1% anomalies that business insight had provided.
+
+One-Class SVM is able to predict anomalies between 1% and 5% by varying the nu parameters.
+
+Note: The normal data points and anomalies seem to overlap as the anomalies are predicted with all 6 features while it is plotted over 2 features deduced using PCA. Having said that the anomalies are mainly towards the edges.
